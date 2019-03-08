@@ -18,6 +18,9 @@ The installation through pypi retrieves 'fake-factory' as a main dependency.
 
     pip install fake2db
 
+### Docker
+
+    docker run -it emirozer/fake2db:latest
 
 ## Optional requirements
 
