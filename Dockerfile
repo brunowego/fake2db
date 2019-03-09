@@ -1,5 +1,7 @@
 FROM python:3.7-alpine3.9
 
-RUN pip install fake2db
+RUN apk add --no-cache mysql build-base postgresql-dev
+
+RUN pip install mysql-connector-python psycopg2 pymongo redis couchdb fake2db
 
 ENTRYPOINT [ "fake2db" ]
